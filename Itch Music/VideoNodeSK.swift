@@ -67,11 +67,16 @@ class VideoNodeSK: SCNNode {
         //16. Add The VideoPlayer Holder
         self.addChildNode(videoPlayerHolder)
         
-        //17. Play The Video
+    
+    }
+    
+    func play() {
         videoPlayer.play()
         videoPlayer.volume = 1
+    }
     
-    
+    func pause() {
+        videoPlayer.pause()
     }
     
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
